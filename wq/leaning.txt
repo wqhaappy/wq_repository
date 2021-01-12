@@ -1,0 +1,16 @@
+github本地提交文件基本命令：
+     1、初始化 git init 
+     2、克隆线上github的仓库：git clone https://github.com/wqhaappy/wq_repository.git 
+     3、把想要提交的文件复制到与.git处于同一目录下
+     4、开始上传文件：
+         git init 
+         git add wq_repository/test 
+         git commit -m "注解"
+         git remote add origin https://github.com/wqhaappy/wq_repository.git
+         git push origin master
+
+注意：如果在指定git remote add origin https://github.com/wqhaappy/wq_repository.git时候出现
+      fatal:remote origin already exists
+      解决：
+      git remote rm origin
+      再次执行git remote add origin https://github.com/wqhaappy/wq_repository.git即可
